@@ -29,10 +29,12 @@ aside img{
     width: 40%;
 }
 
-/* MAIN */
+
 main{
     width: 100%;
 }
+
+/* HEADER */
 
 #header-wrapper{
     height: 90px;
@@ -53,4 +55,14 @@ main{
 
 #header-wrapper a:hover{
     transform: scale(1.1);
+}
+
+/* MAIN */
+
+#nav-wrapper ul{
+    padding: 1em;
+}
+
+#nav-wrapper li{
+    display: inline;
 }
