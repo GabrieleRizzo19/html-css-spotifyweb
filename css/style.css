@@ -1,0 +1,27 @@
+/* GENERIC UI */
+
+:root{
+    --primary-col: black;
+    --secondary-col: #141922;
+    --terziary-col: #282828;
+}
+
+/* ASIDE */
+
+#aside-wrapper{
+    background-color: var(--primary-col);
+    width: 55px;
+    height: calc( 100vh - 90px);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+aside img{
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
+
+
+#download-button{
+    width: 40%;
+}
