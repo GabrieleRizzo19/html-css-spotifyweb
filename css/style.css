@@ -68,13 +68,13 @@ main{
 
 /* NAV */
 
-#nav-wrapper ul{
-    padding: 1em;
+#nav-wrapper{
+    text-align: center;
+    font-size: 14px;
 }
 
 #nav-wrapper li{
     display: inline;
-
     line-height: 3em;
 }
 
@@ -98,6 +98,10 @@ main{
 
 .card-container{
     padding: 1em 0;
+}
+
+.card{
+    padding: 0.25em;
 }
 
 .card img{

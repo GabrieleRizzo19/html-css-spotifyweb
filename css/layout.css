@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 361px) {
     .col-1-2-xs{
-        width: calc( 100% / 2 - 0.5em);
+        width: calc( 100% / 2);
     }
 }
 
