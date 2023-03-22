@@ -120,3 +120,21 @@ main{
     background-color: var(--terziary-col);
     height: 90px;
 }
+
+#footer-wrapper img{
+    width: 30px;
+}
+
+#song-option{
+    gap: 0.5em;
+}
+
+#song-option > div:last-child{
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+#playing-controller > div{
+    gap: 0.5em;
+}
+
