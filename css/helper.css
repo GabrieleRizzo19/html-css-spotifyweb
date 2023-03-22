@@ -55,7 +55,10 @@
 
 .margin-zero-auto{ margin: 0 auto; }
 
-.text-align-center{ text-align: center; }
+/* TEXT FORMAT  */
+
+
+.text-center{ text-align: center; }
 
 /* FLEX */
 
@@ -63,6 +66,7 @@
 .flex-direction-row{ flex-direction: row; }
 .flex-direction-column{ flex-direction: column; }
 .justify-content-sb{ justify-content: space-between; }
+.justify-content-sa{ justify-content: space-around; }
 .justify-content-center{ justify-content: center; }
 .justify-content-fe{ justify-content: flex-end; }
 .align-items-center{ align-items: center; }

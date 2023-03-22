@@ -7,38 +7,14 @@ body{
     --primary-col: black;
     --secondary-col: #141922;
     --terziary-col: #282828;
-}
-
-/* ASIDE */
-
-#aside-wrapper{
-    background-color: var(--primary-col);
-    width: 55px;
-    height: calc( 100vh - 90px);
-    text-align: center;
-    padding-top: 1rem;
-}
-
-aside img{
-    width: 80%;
-    margin-bottom: 0.5rem;
-}
-
-
-#download-button{
-    width: 40%;
-}
-
-
-main{
-    width: 100%;
+    --grey-text-col: #7d7f84;
 }
 
 /* HEADER */
 
 #header-wrapper{
+    margin-left: 55px;
     height: 90px;
-    width: 100%;
     background-color: var(--primary-col);
     padding-right: 1rem;
 }
@@ -57,7 +33,40 @@ main{
     transform: scale(1.1);
 }
 
+/* ASIDE */
+
+#aside-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--primary-col);
+    width: 55px;
+    height: calc( 100vh - 90px);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+aside img{
+    width: 60%;
+    margin-bottom: 0.5rem;
+}
+
+
+#download-button{
+    width: 40%;
+}
+
 /* MAIN */
+
+main{
+    margin-left: 55px;
+    background-color: var(--secondary-col);
+    height: calc( 100vh - 90px - 90px);
+    overflow-y: auto;
+}
+
+/* NAV */
 
 #nav-wrapper ul{
     padding: 1em;
@@ -65,4 +74,45 @@ main{
 
 #nav-wrapper li{
     display: inline;
+
+    line-height: 3em;
+}
+
+#nav-wrapper li a{
+    color: var(--grey-text-col);
+    padding: 0 0.5em;
+}
+
+#nav-wrapper hr{
+    width: 30%;
+    border: 1px solid greenyellow;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* RECENTLY, CREATE FOR, POPULAR ARTIST */
+
+.container{
+    color: white;
+}
+
+.card-container{
+    padding: 1em 0;
+}
+
+.card img{
+    width: 100%;
+}
+
+/* POPULAR ARTIST */
+
+#popular-artist .card img{
+    border-radius: 50%;
+}
+
+/* FOOTER */
+
+#footer-wrapper{
+    background-color: var(--terziary-col);
+    height: 90px;
 }

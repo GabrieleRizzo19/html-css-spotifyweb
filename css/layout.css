@@ -1,13 +1,22 @@
-/*********************************** 
-************* LAYOUTING ************
-***********************************/
-
-/* MOBILE XS FIRST */
+/* LAYOUTING */
 
 .container{
-    max-width: 480px;
-    margin: 0 auto;
+    padding: 1em;
 }
 
+/* MOBILE (XXS) FIRST (MAX 360px) */
 
+.col-100-xxs{
+    width: 100%;
+}
+
+/* MOBILE (XS) FIRST (MAX 480px) */
+
+@media screen and (min-width: 361px) {
+    .col-1-2-xs{
+        width: calc( 100% / 2 - 0.5em);
+    }
+}
+
+/* MOBILE (S) (MAX 768px) */
 
