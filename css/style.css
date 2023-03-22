@@ -1,4 +1,7 @@
 /* GENERIC UI */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 :root{
     --primary-col: black;
@@ -24,4 +27,30 @@ aside img{
 
 #download-button{
     width: 40%;
+}
+
+/* MAIN */
+main{
+    width: 100%;
+}
+
+#header-wrapper{
+    height: 90px;
+    width: 100%;
+    background-color: var(--primary-col);
+    padding-right: 1rem;
+}
+
+#header-wrapper a{
+    font-size: 14px;
+    text-align: center;
+    padding: 0.5em 3em;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s;
+}
+
+#header-wrapper a:hover{
+    transform: scale(1.1);
 }
