@@ -46,6 +46,10 @@ body{
     margin: 0.5rem auto;
 }
 
+#nav-wrapper-large [alt=HOME]{
+    border-left: 2px solid greenyellow;
+}
+
 #nav-wrapper-large a{
     gap: 0.5rem;
     color: grey;
@@ -111,9 +115,10 @@ main{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    z-index: 10;
+    width: calc( 100% - 55px);
     opacity: 0.8;
-    /* margin-left: 55px; */
+    margin-left: 55px;
     height: 90px;
     background-color: var(--primary-col);
     padding-right: 1rem;
@@ -133,7 +138,6 @@ main{
     transform: scale(1.1);
 }
 
-/* xs */
 
 /* CATEOGORY NAVIGATOR */
 
@@ -185,6 +189,12 @@ main section small{
     width: 100%;
     background-color: black;
 }
+
+.card img, .card h4{
+    margin-bottom: 0.5rem;
+} 
+
+
 .card:hover{
     cursor: pointer;
 }
@@ -212,18 +222,29 @@ main section small{
 
 /* FOOTER */
 
+
 #footer-wrapper{
     background-color: var(--terziary-col);
     height: 90px;
     font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    gap: 1rem;
 }
 
 #footer-wrapper img{
     width: 30px;
 }
 
-#song-option{
-    gap: 0.5em;
+#footer-wrapper small{
+    color: grey;
+}
+
+#song-option, #streaming-option{
+    gap: 1em;
 }
 
 #song-option > div:last-child{
@@ -233,9 +254,52 @@ main section small{
 
 #playing-controller > div{
     gap: 0.5em;
+    margin: 1em 0;
 }
 
+#playing-controller > div:first-child{
+    max-width: 200px;
+    margin: 0 auto;
+}
 
+#playing-controller i:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#play-button{
+    font-size: 1.5em;
+}
+
+#entire-progress-bar{
+    width: 75%;
+    height: 4px;
+    background-color: grey;
+    border-radius: 2px;
+}
+
+#effective-progress-bar{
+    width: 30%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#entire-progress-bar:hover
+
+#entire-volume-bar{
+    width: 50%;
+    height: 4px;
+    background-color: grey;
+    border-radius: 2px;
+}
+
+#effective-volume-bar{
+    width: 30%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
 
 /* MEDIA QUERY */
 
@@ -250,6 +314,11 @@ main section small{
     }
 
     main{
+        margin-left: 200px;
+    }
+
+    #call-to-action{
+        width: calc( 100% - 200px );
         margin-left: 200px;
     }
 

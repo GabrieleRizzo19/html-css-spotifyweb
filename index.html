@@ -287,10 +287,8 @@
     <!-- Footer -->
     <footer>
         <div id="footer-wrapper" class="container flex justify-content-sb align-items-center">
-            <div id="song-option" class="flex justify-content-sb align-items-center">
-                <div id="playing-song image">
+            <div id="song-option" class="flex justify-content-fs align-items-center col20">
                     <img src="./img/sinister.jpeg" alt="PLAYING SONG">
-                </div>
                 <div id="song-name">
                     <h4>Sinister</h4>
                     <small>Song Name</small>
@@ -301,26 +299,32 @@
                 </div>
             </div>
 
-            <div id="playing-controller">
-                <div class="flex justify-content-sb">
+            <div id="playing-controller" class="col50">
+                <div class="flex justify-content-sb align-items-center">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
-                    <i id="play-button" class="fa-solid fa-play"></i>
+                    <i id="play-button" class="fa-regular fa-circle-play"></i>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-sharp fa-solid fa-rotate-right"></i>
                 </div>
-                <div class="flex justify-content-sb">
+                <div class="flex justify-content-sb align-items-center">
                     <small>0:25</small>
-                    ................
+                    <div id="entire-progress-bar">
+                        <div id="effective-progress-bar">
+                        </div>
+                    </div>
                     <small>4:35</small>
                 </div>
             </div>
 
-            <div id="streaming-option">
+            <div id="streaming-option" class="flex justify-content-fe align-items-center col20">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-volume-high"></i>
-                .......
+                <div id="entire-volume-bar">
+                    <div id="effective-volume-bar">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
