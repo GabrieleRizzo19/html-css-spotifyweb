@@ -13,6 +13,11 @@ body{
 /* HEADER */
 
 #header-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc( 100% - 55px);
+    opacity: 0.8;
     margin-left: 55px;
     height: 90px;
     background-color: var(--primary-col);
@@ -33,9 +38,9 @@ body{
     transform: scale(1.1);
 }
 
-/* ASIDE */
+/* NAV */
 
-#aside-wrapper{
+#nav-wrapper{
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +52,7 @@ body{
     padding-top: 1rem;
 }
 
-aside img{
+nav img{
     width: 60%;
     margin-bottom: 0.5rem;
 }
@@ -61,29 +66,30 @@ aside img{
 
 main{
     margin-left: 55px;
+    padding-top: 90px;
     background-color: var(--secondary-col);
-    height: calc( 100vh - 90px - 90px);
+    height: calc( 100vh - 90px);
     overflow-y: auto;
 }
 
-/* NAV */
+/* CATEOGORY NAVIGATOR */
 
-#nav-wrapper{
+#category-navigator{
     text-align: center;
     font-size: 14px;
 }
 
-#nav-wrapper li{
+#category-navigator li{
     display: inline;
     line-height: 3em;
 }
 
-#nav-wrapper li a{
+#category-navigator li a{
     color: var(--grey-text-col);
     padding: 0 0.5em;
 }
 
-#nav-wrapper hr{
+#category-navigator hr{
     width: 30%;
     border: 1px solid greenyellow;
     left: 50%;
