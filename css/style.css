@@ -85,7 +85,7 @@ body{
 #playlist-container{
     margin-top: 1rem;
     line-height: 2em;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 #nav-wrapper-large .download-button{
@@ -247,6 +247,15 @@ main section small{
     gap: 1em;
 }
 
+#song-option i{
+    color: grey;
+}
+
+#song-option i:hover{
+    color: white;
+    cursor: pointer;
+}
+
 #song-option > div:last-child{
     flex-direction: column;
     gap: 0.25em;
@@ -285,8 +294,6 @@ main section small{
     border-radius: 2px;
 }
 
-#entire-progress-bar:hover
-
 #entire-volume-bar{
     width: 50%;
     height: 4px;
@@ -299,6 +306,44 @@ main section small{
     height: 4px;
     background-color: white;
     border-radius: 2px;
+}
+
+#entire-progress-bar:hover{
+    cursor: pointer;
+}
+
+#entire-progress-bar:hover #effective-progress-bar{
+    background-color: greenyellow;
+}
+
+#entire-volume-bar:hover{
+    cursor: pointer;
+}
+
+#entire-volume-bar:hover #effective-volume-bar{
+    background-color: greenyellow;
+}
+
+#entire-progress-bar .pallino{
+    display: none;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -30%);
+}
+
+#entire-volume-bar .pallino{
+    display: none;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -30%);
+}
+
+#entire-progress-bar:hover .pallino{
+    display: block;
+}
+
+#entire-volume-bar:hover .pallino{
+    display: block;
 }
 
 /* MEDIA QUERY */
@@ -320,6 +365,11 @@ main section small{
     #call-to-action{
         width: calc( 100% - 200px );
         margin-left: 200px;
+    }
+
+    #song-option > div:last-child{
+        flex-direction: row;
+        gap: 1em;
     }
 
 }
