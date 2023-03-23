@@ -20,3 +20,27 @@
 
 /* MOBILE (S) (MAX 768px) */
 
+@media screen and (min-width: 481px) {
+    .col-1-2-s{
+        width: calc( 100% / 2);
+    }
+
+}
+
+/* TABLET (MD) (MAX 992px) */
+
+@media screen and (min-width: 787px) {
+    .col-1-4-md{
+        width: calc( 100% / 4);
+    }
+
+}
+
+/* DESKTOP (LG) (MAX 992px) */
+
+@media screen and (min-width: 993px) {
+    .col-1-6-lg{
+        width: calc( 100% / 6);
+    }
+
+}

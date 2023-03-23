@@ -13,21 +13,16 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div id="header-wrapper" class="flex justify-content-fe align-items-center">
-            <a href="#">EFFETTUA L'UPGRADE</a>
-        </div>
-    </header>
+    
 
     <!-- NAV -->
     <nav>
-        <div id="nav-wrapper" class="flex flex-direction-column justify-content-sb">
-            <div id="aside-top">
+        <div id="nav-wrapper-thin" class="nav-wrapper flex flex-direction-column justify-content-sb">
+            <div class="aside-top">
                 <ul>
                     <li>
                         <img src="./img/logo-small.svg" alt="logo">
-                        <span></span>
+                        
                     </li>
                     <li>
                         <img src="./img/home.svg" alt="HOME">
@@ -41,13 +36,74 @@
                 </ul>
             </div>
             
-            <div id="aside-bottom">
+            <div class="aside-bottom">
                 <ul>
                     <li>
-                        <img id="download-button" src="./img/download.svg" alt="DOWNLOAD">
+                        <img class="download-button" src="./img/download.svg" alt="DOWNLOAD">
                     </li>
                     <li>
                         <img src="./img/profile.svg" alt="PROFILE">
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div id="nav-wrapper-large" class="nav-wrapper flex flex-direction-column justify-content-sb">
+            <div class="aside-top">
+                <ul>
+                    <li>
+                        <img id="logo-big" src="./img/logo.svg" alt="logo">
+                    </li>
+                    <li class="flex align-items-center">
+                        <img src="./img/home.svg" alt="HOME">
+                        <span>Home</span>
+                    </li>
+                    <li class="flex align-items-center">
+                        <img src="./img/search.svg" alt="SEARCH">
+                        <span>Cerca</span>
+                    </li>
+                    <li class="flex align-items-center">
+                        <img src="./img/libreria.svg" alt="LIBRARY">
+                        <span>La tua libreria</span>
+                    </li>
+                </ul>
+
+                <h4>PLAYLIST</h4>
+                <div>
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                    <span>Crea Playlist</span>
+                </div>
+
+                <div id="playlist-container">
+                    <ul>
+                        <li>Nome Playlist</li>
+                    </ul>
+                    <ul>
+                        <li>Nome Playlist</li>
+                    </ul>
+                    <ul>
+                        <li>Nome Playlist</li>
+                    </ul>
+                    <ul>
+                        <li>Nome Playlist</li>
+                    </ul>
+                    <ul>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="aside-bottom">
+                <ul>
+                    <li class="flex align-items-center">
+                        <img class="download-button" src="./img/download.svg" alt="DOWNLOAD">
+                        <span>Installa app</span> 
+                    </li>
+                    <hr>
+                    <li class="flex align-items-center">
+                        <img id="profile-icon-large" src="./img/profile.svg" alt="PROFILE">
+                        <strong>Gabriele Rizzo</strong>
                     </li>
                 </ul>
             </div>
@@ -58,6 +114,12 @@
 
     <!-- Main -->
     <main>
+
+        <!-- Call to action -->
+        <div id="call-to-action" class="flex justify-content-fe align-items-center">
+            <a href="#">EFFETTUA L'UPGRADE</a>
+        </div>
+
         <!-- Category Navigator -->
         <section>
             <div id="category-navigator" class="container">
@@ -89,7 +151,7 @@
         <section id="recently" class="container">
             <h1>Recently</h1>
             <div class="card-container flex justify-content-fs flex-wrap">
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -98,7 +160,7 @@
                         <small>Subtitle</small>
                     </div>
                 </div>
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -107,7 +169,7 @@
                         <small>Subtitle</small>
                     </div>
                 </div>
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -116,7 +178,7 @@
                         <small>Subtitle</small>
                     </div>
                 </div>
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -125,7 +187,7 @@
                         <small>Subtitle</small>
                     </div>
                 </div>
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -134,7 +196,7 @@
                         <small>Subtitle</small>
                     </div>
                 </div>
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -151,7 +213,7 @@
             <h1>Create for Gabriele Rizzo</h1>
             <small>Più ascolti. più saranno i suggerimenti</small>
             <div class="card-container flex justify-content-fs flex-wrap">
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -160,7 +222,7 @@
                         <small>Subtitle</small>
                     </div>
                 </div>
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -176,8 +238,9 @@
         <!-- Popular artist section -->
         <section id="popular-artist" class="container">
             <h1>Artisti più popolari</h1>
+            <small>Più ascolti. più saranno i suggerimenti</small>
             <div class="card-container flex justify-content-fs flex-wrap">
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>
@@ -186,7 +249,7 @@
                         <small>Subtitle</small>
                     </div>
                 </div>
-                <div class="card col-100-xxs col-1-2-xs">
+                <div class="card col-100-xxs col-1-2-xs col-1-2-s col-1-4-md col-1-6-lg">
                     <div class="card-image">
                         <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                     </div>

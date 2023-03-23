@@ -70,6 +70,7 @@
 .justify-content-center{ justify-content: center; }
 .justify-content-fe{ justify-content: flex-end; }
 .justify-content-fs{ justify-content: flex-start; }
+.justify-content-se{ justify-content: space-evenly; }
 .align-items-center{ align-items: center; }
 
 .flex-wrap{ flex-wrap: wrap; }

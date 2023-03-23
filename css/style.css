@@ -10,57 +10,77 @@ body{
     --grey-text-col: #7d7f84;
 }
 
-/* HEADER */
 
-#header-wrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: calc( 100% - 55px);
-    opacity: 0.8;
-    margin-left: 55px;
-    height: 90px;
-    background-color: var(--primary-col);
-    padding-right: 1rem;
-}
-
-#header-wrapper a{
-    font-size: 14px;
-    text-align: center;
-    padding: 0.5em 3em;
-    border: 2px solid white;
-    border-radius: 30px;
-    color: white;
-    transition: 0.3s;
-}
-
-#header-wrapper a:hover{
-    transform: scale(1.1);
-}
 
 /* NAV */
 
-#nav-wrapper{
+.nav-wrapper{
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
     background-color: var(--primary-col);
-    width: 55px;
     height: calc( 100vh - 90px);
-    text-align: center;
     padding-top: 1rem;
+    color: white;
 }
 
-nav img{
+#nav-wrapper-thin{
+    width: 55px;
+    text-align: center;
+}
+
+#nav-wrapper-thin img{
     width: 60%;
     margin-bottom: 0.5rem;
 }
 
-
-#download-button{
-    width: 40%;
+#nav-wrapper-large{
+    width: 200px;
+    display: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
+#nav-wrapper-large li{
+    margin: 0.5rem auto;
+    gap: 0.5rem;
+}
+
+#nav-wrapper-large img{
+    width: 15%;
+}
+
+#nav-wrapper-large #logo-big{
+    width: 70%;
+}
+
+#nav-wrapper-large h4{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.fa-plus{
+    padding: 0.45rem 0.5rem;
+    background-color: grey;
+}
+
+#playlist-container{
+    margin-top: 1rem;
+    line-height: 2em;
+    overflow-y: auto;
+}
+
+#nav-wrapper-large .download-button{
+    width: 10%;
+}
+
+#nav-wrapper-large #profile-icon-large{
+    background-color: grey;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
 
 /* MAIN */
 
@@ -71,6 +91,36 @@ main{
     height: calc( 100vh - 90px);
     overflow-y: auto;
 }
+
+/* CALL TO ACTION */
+
+#call-to-action{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+    /* margin-left: 55px; */
+    height: 90px;
+    background-color: var(--primary-col);
+    padding-right: 1rem;
+}
+
+#call-to-action a{
+    font-size: 14px;
+    text-align: center;
+    padding: 0.5em 3em;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s;
+}
+
+#call-to-action a:hover{
+    transform: scale(1.1);
+}
+
+/* xs */
 
 /* CATEOGORY NAVIGATOR */
 
@@ -125,6 +175,7 @@ main{
 #footer-wrapper{
     background-color: var(--terziary-col);
     height: 90px;
+    font-size: 14px;
 }
 
 #footer-wrapper img{
@@ -144,3 +195,22 @@ main{
     gap: 0.5em;
 }
 
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 481px) {
+    
+    #nav-wrapper-thin{
+        display: none;
+    }
+    
+    #nav-wrapper-large{
+        display: flex;
+    }
+
+    main{
+        margin-left: 200px;
+    }
+
+}
