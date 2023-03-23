@@ -152,6 +152,10 @@ main{
     padding: 0 0.5em;
 }
 
+#category-navigator li a:hover{
+    color: white;
+}
+
 #category-navigator hr{
     width: 30%;
     border: 1px solid greenyellow;
@@ -160,6 +164,10 @@ main{
 }
 
 /* RECENTLY, CREATE FOR, POPULAR ARTIST */
+
+main section small{
+    color: grey;
+}
 
 .container{
     color: white;
@@ -175,6 +183,25 @@ main{
 
 .card img{
     width: 100%;
+    background-color: black;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover img{
+    opacity: 0.5;
+}
+
+.fa-circle-play.pos-absolute{
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.card:hover .fa-circle-play.pos-absolute{
+    display: block;
 }
 
 /* POPULAR ARTIST */
