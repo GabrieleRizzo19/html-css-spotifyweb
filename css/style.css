@@ -44,7 +44,15 @@ body{
 
 #nav-wrapper-large li{
     margin: 0.5rem auto;
+}
+
+#nav-wrapper-large a{
     gap: 0.5rem;
+    color: grey;
+}
+
+#nav-wrapper-large a:hover{
+    color: white;
 }
 
 #nav-wrapper-large img{
@@ -63,6 +71,11 @@ body{
 .fa-plus{
     padding: 0.45rem 0.5rem;
     background-color: grey;
+    color: black;
+}
+
+#nav-wrapper-large a:hover .fa-plus{
+    background-color: white;
 }
 
 #playlist-container{
