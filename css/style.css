@@ -10,6 +10,8 @@ body{
     --grey-text-col: #7d7f84;
     --cta-height: 90px;
     --footer-height: 90px;
+    --navbar-thin-width:  55px;
+    --navbar-large-width: 200px;
 }
 
 
@@ -29,7 +31,7 @@ body{
 }
 
 #nav-wrapper-thin{
-    width: 55px;
+    width: var(--navbar-thin-width);
     text-align: center;
 }
 
@@ -39,7 +41,7 @@ body{
 }
 
 #nav-wrapper-large{
-    width: 200px;
+    width: var(--navbar-large-width);
     display: none;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -105,7 +107,7 @@ body{
 /* MAIN */
 
 main{
-    margin-left: 55px;
+    margin-left: var(--navbar-thin-width);
     padding-top: var(--cta-height);
     background-color: var(--secondary-col);
     height: calc( 100vh - var(--footer-height));
@@ -119,9 +121,9 @@ main{
     top: 0;
     left: 0;
     z-index: 10;
-    width: calc( 100% - 55px);
+    width: calc( 100% - var(--navbar-thin-width));
     opacity: 0.8;
-    margin-left: 55px;
+    margin-left: var(--navbar-thin-width);
     height: var(--cta-height);
     background-color: var(--primary-col);
     padding-right: 1rem;
@@ -362,12 +364,12 @@ main section small{
     }
 
     main{
-        margin-left: 200px;
+        margin-left: var(--navbar-large-width);
     }
 
     #call-to-action{
-        width: calc( 100% - 200px );
-        margin-left: 200px;
+        width: calc( 100% - var(--navbar-large-width) );
+        margin-left: var(--navbar-large-width);
     }
 
     #song-option, #streaming-option{
