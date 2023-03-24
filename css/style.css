@@ -23,6 +23,7 @@ body{
     height: calc( 100vh - 90px);
     padding-top: 1rem;
     color: white;
+    overflow: hidden;
 }
 
 #nav-wrapper-thin{
@@ -227,11 +228,6 @@ main section small{
     background-color: var(--terziary-col);
     height: 90px;
     font-size: 14px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
     gap: 1rem;
 }
 
@@ -247,11 +243,13 @@ main section small{
     gap: 1em;
 }
 
-#song-option i{
+#song-option i,
+#streaming-option i{
     color: grey;
 }
 
-#song-option i:hover{
+#song-option i:hover,
+#streaming-option i:hover{
     color: white;
     cursor: pointer;
 }
@@ -372,4 +370,15 @@ main section small{
         gap: 1em;
     }
 
+}
+
+@media screen and (max-height: 360px){
+
+    #call-to-action{
+        display: none;
+    }
+
+    main{
+        padding-top: 0;
+    }
 }
