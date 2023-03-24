@@ -240,7 +240,7 @@ main section small{
 }
 
 #song-option, #streaming-option{
-    gap: 1em;
+    gap: 0.5em;
 }
 
 #song-option i,
@@ -297,6 +297,7 @@ main section small{
     height: 4px;
     background-color: grey;
     border-radius: 2px;
+    display: none;
 }
 
 #effective-volume-bar{
@@ -322,25 +323,25 @@ main section small{
     background-color: greenyellow;
 }
 
-#entire-progress-bar .pallino{
+#entire-progress-bar .bar-ball{
     display: none;
     right: 0;
     top: 0;
     transform: translate(50%, -30%);
 }
 
-#entire-volume-bar .pallino{
+#entire-volume-bar .bar-ball{
     display: none;
     right: 0;
     top: 0;
     transform: translate(50%, -30%);
 }
 
-#entire-progress-bar:hover .pallino{
+#entire-progress-bar:hover .bar-ball{
     display: block;
 }
 
-#entire-volume-bar:hover .pallino{
+#entire-volume-bar:hover .bar-ball{
     display: block;
 }
 
@@ -365,11 +366,22 @@ main section small{
         margin-left: 200px;
     }
 
+    #song-option, #streaming-option{
+        width: 20%;
+    }
+
+    #entire-volume-bar{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 787px){
+
     #song-option > div:last-child{
         flex-direction: row;
         gap: 1em;
     }
-
 }
 
 @media screen and (max-height: 360px){
@@ -382,3 +394,4 @@ main section small{
         padding-top: 0;
     }
 }
+
