@@ -8,6 +8,8 @@ body{
     --secondary-col: #141922;
     --terziary-col: #282828;
     --grey-text-col: #7d7f84;
+    --cta-height: 90px;
+    --footer-height: 90px;
 }
 
 
@@ -20,7 +22,7 @@ body{
     left: 0;
     z-index: 10;
     background-color: var(--primary-col);
-    height: calc( 100vh - 90px);
+    height: calc( 100vh - var(--footer-height));
     padding-top: 1rem;
     color: white;
     overflow: hidden;
@@ -86,7 +88,7 @@ body{
 #playlist-container{
     margin-top: 1rem;
     line-height: 2em;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #nav-wrapper-large .download-button{
@@ -104,9 +106,9 @@ body{
 
 main{
     margin-left: 55px;
-    padding-top: 90px;
+    padding-top: var(--cta-height);
     background-color: var(--secondary-col);
-    height: calc( 100vh - 90px);
+    height: calc( 100vh - var(--footer-height));
     overflow-y: auto;
 }
 
@@ -120,7 +122,7 @@ main{
     width: calc( 100% - 55px);
     opacity: 0.8;
     margin-left: 55px;
-    height: 90px;
+    height: var(--cta-height);
     background-color: var(--primary-col);
     padding-right: 1rem;
 }
@@ -226,7 +228,7 @@ main section small{
 
 #footer-wrapper{
     background-color: var(--terziary-col);
-    height: 90px;
+    height: var(--footer-height);
     font-size: 14px;
     gap: 1rem;
 }
@@ -328,6 +330,7 @@ main section small{
     right: 0;
     top: 0;
     transform: translate(50%, -30%);
+    color: white;
 }
 
 #entire-volume-bar .bar-ball{
@@ -335,6 +338,7 @@ main section small{
     right: 0;
     top: 0;
     transform: translate(50%, -30%);
+    color: white;
 }
 
 #entire-progress-bar:hover .bar-ball{
