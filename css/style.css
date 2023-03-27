@@ -273,7 +273,7 @@ main section small{
     margin: 0 auto;
 }
 
-#playing-controller i:hover{
+#playing-controller > div:first-child i:hover{
     cursor: pointer;
     transform: scale(1.5);
 }
